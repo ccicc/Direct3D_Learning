@@ -1,18 +1,20 @@
-#ifndef MAIN_H_
+#pragma once
 
-#define MAIN_H_
+#include <Windows.h>
+
 typedef struct
 {
-	int x, y;
 	int direction;
-} SPRITE;
+	int x, y;
+} Sprite;
 
-extern "C" BOOL Game_Init(HWND hWnd);
+CONST INT IMAGES_COUNT = 4;
+CONST INT SPRITES_COUNT = 30;
 
-extern "C" VOID Game_Paint(HWND hWnd);
+BOOL Game_Init(HWND hWnd);
 
-extern "C" BOOL Game_CleanUp(HWND hWnd);
+VOID Game_Paint(HWND hWnd);
 
-extern "C" VOID Bubble_Sprites(SPRITE sprites[], INT n);
+BOOL Game_CleanUp(HWND hWnd);
 
-#endif
+VOID Bubble_Sprites(Sprite [], int n);
