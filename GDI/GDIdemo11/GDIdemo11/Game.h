@@ -10,8 +10,6 @@ struct sWordBullets
 };
 
 CONST INT BULLETS_NUM = 30;
-// ±³¾°Í¼Æ«ÒÆÁ¿
-CONST INT BG_OFFSET = 0;
 
 extern BOOL Game_Init(HWND hWnd);
 extern VOID Game_Paint(HWND hWnd);
